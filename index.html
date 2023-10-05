@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./syle.css" />
     <title>Football Club Generator</title>
   </head>
@@ -12,14 +13,22 @@
     <select id="leagueSelect">
       <option value="AllLeague">All League</option>
     </select>
+    
+    <div id="tierSelect">
+      <label><input type="checkbox" name="tier" value="Star" /> Easy</label>
+      <label><input type="checkbox" name="tier" value="Middle" /> Medium</label>
+      <label><input type="checkbox" name="tier" value="Low" /> Hard</label>
+      <label><input type="checkbox" name="tier" value="Underated" /> Hell</label>
+    </div>
 
-    <button id="generateButton">Generate Club</button>
-    <p id="clubLeague"></p>
     <div id="clubInfo">
       <p id="clubName"></p>
       <img id="clubLogo" src="" alt="Club Logo" />
       <p id="result"></p>
+      <p id="clubTier">Tier:</p>
+      <p id="clubLeague"></p>
     </div>
+    <button id="generateButton" class="bubbly-button">Generate</button>
 
     <script src="./script.js" type="module"></script>
   </body>
